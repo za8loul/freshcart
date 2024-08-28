@@ -20,7 +20,7 @@ export default function Login() {
         setUserLogin(apiResponse.data.token);
         localStorage.setItem("userToken", apiResponse.data.token);
         console.log(apiResponse.data.token);
-        navigate("/");
+        navigate("/home");
       })
       .catch((apiResponse) => {
         setIsLoading(false);

@@ -20,7 +20,7 @@ export default function Register() {
         setUserLogin(apiResponse.data.token);
         localStorage.setItem('userToken', apiResponse.data.token);
         console.log(apiResponse.data.token);
-        navigate("/");
+        navigate("/home");
       })
       .catch((apiResponse) => {
         setIsLoading(false);
@@ -235,7 +235,7 @@ export default function Register() {
               Already have an account?{" "}
               <span className=" font-semibold text-green-500">
                 {" "}
-                <Link to={"/login"}>Sign in</Link>{" "}
+                <Link to={"/"}>Sign in</Link>{" "}
               </span>
             </p>
           </div>

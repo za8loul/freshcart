@@ -15,7 +15,7 @@ export default function Navbar() {
   function logout() {
     localStorage.removeItem("userToken");
     setUserLogin(null);
-    navigate("/login");
+    navigate("/");
   }
 
   function toggleMenu() {
@@ -27,7 +27,7 @@ export default function Navbar() {
       <nav className="fixed left-0 right-0 py-3 top-0 z-20 bg-gray-100 border-gray-200">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
           <Link
-            to={"/"}
+            to={"/home"}
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <i className="fa-solid fa-cart-shopping fa-2xl text-green-600"></i>

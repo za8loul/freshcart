@@ -38,7 +38,7 @@ export default function ResetPassword() {
     );
     if (request.data.token) {
       setIsLoading(false);
-      navigate("/login");
+      navigate("/");
     }
     console.log(request);
   }
