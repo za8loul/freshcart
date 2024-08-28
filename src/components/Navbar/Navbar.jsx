@@ -72,7 +72,7 @@ export default function Navbar() {
                 <>
                   <li>
                     <Link
-                      to={"/"}
+                      to={"/home"}
                       className="block py-2 px-3 active:text-black hover:text-black text-gray-600 font-normal"
                     >
                       Home
